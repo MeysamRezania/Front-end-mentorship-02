@@ -8,7 +8,58 @@
   </head>
   <body>
     <section id="form">
-      
+      <form>
+        <label for="name">Full Name</label>
+        <div class="form__input--text">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <label for="email">Email Address</label>
+        <div class="form__input--text">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <label for="birth-day">Date of Birth</label>
+        <div class="form__input--text">
+          <input type="date" id="birth-day" name="birth-day" required />
+        </div>
+        <label for="">Gender</label>
+        <div class="form__radio">
+          <label class="form__radio--male" for="male"
+            ><input
+              type="radio"
+              id="male"
+              name="gender"
+              value=" male"
+              required
+            />Male</label
+          >
+
+          <label class="form__radio--female" for="female"
+            ><input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />Female</label
+          >
+        </div>
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms">
+          I accept the <a href="#">terms</a> &amp; conditions</label
+        >
+        <input type="submit" value="Create Account" />
+      </form>
     </section>
   </body>
 </html>
