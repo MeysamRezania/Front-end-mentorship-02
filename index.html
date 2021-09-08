@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <section id="form">
-      <form>
-        <label for="name">Full Name</label>
+    <section id="form" class="disp-flx">
+      <form class="disp-flx">
+        <label class="form__lable--txt" for="name">Full Name:</label>
         <div class="form__input--text">
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Your Name"
+            autocomplete="off"
             required
           />
         </div>
-        <label for="email">Email Address</label>
+        <label class="form__lable--txt" for="email">Email Address:</label>
         <div class="form__input--text">
           <input
             type="email"
             id="email"
             name="email"
             placeholder="Email Address"
+            autocomplete="off"
             required
           />
         </div>
-        <label for="birth-day">Date of Birth</label>
+        <label class="form__lable--txt" for="birth-day">Date of Birth:</label>
         <div class="form__input--text">
           <input type="date" id="birth-day" name="birth-day" required />
         </div>
-        <label for="">Gender</label>
-        <div class="form__radio">
-          <label class="form__radio--male" for="male"
+        <label class="form__lable--txt" for="">Gender</label>
+        <div class="form__radio disp-flx">
+          <label class="form__radio--male disp-flx" for="male"
             ><input
               type="radio"
               id="male"
@@ -45,7 +47,7 @@
             />Male</label
           >
 
-          <label class="form__radio--female" for="female"
+          <label class="form__radio--female disp-flx" for="female"
             ><input
               type="radio"
               id="female"
@@ -54,10 +56,13 @@
             />Female</label
           >
         </div>
-        <input type="checkbox" id="terms" name="terms" />
+        <div class="form__terms disp-flx">
+          <input type="checkbox" id="terms" name="terms" />
         <label for="terms">
           I accept the <a href="#">terms</a> &amp; conditions</label
         >
+        </div>
+        
         <input type="submit" value="Create Account" />
       </form>
     </section>
